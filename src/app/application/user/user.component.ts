@@ -12,4 +12,9 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  accountOptions() {
+    console.log("Hello World");
+    // document.getElementById('account').classList.toggle("show");
+  }
+
 }

@@ -1,1 +1,68 @@
-<p>user works!</p>
+<div class="app-content">
+    <div class="app-navbar">
+        <div class="app-nav">
+            <a class="app-nav-link" href="#">
+                <span class="app-logo">Resume Building Platform</span>
+            </a>
+            <div class="app-nav-items">
+                <div class="app-navbar-tabs-container">
+                    <div class="navbar-dashboard-container">
+                        <a aria-current="page" class="navbar-menu-link--active navbar-dashboard" href="">Dashboard</a>
+                    </div>
+                </div>
+                <div class="navbar-pipe"></div>
+                <div class="navbar-user-tab">
+                    <div class="navbar-user-container">
+                        <div class="navbar-user">Kwabena Ampofo</div>
+                        <div class="navbar-user-options-caret dropdown" (click)="accountOptions()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.32427537,7.23715414 L10.6757246,5.76284586 L16.6757246,11.2628459 C17.1080918,11.6591824 17.1080918,12.3408176 16.6757246,12.7371541 L10.6757246,18.2371541 L9.32427537,16.7628459 L14.5201072,12 L9.32427537,7.23715414 Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="navbar-user-caret-options-container" id="account">
+                            <div class="misc-options caret-options">
+                                <p>Hello World</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app">
+        <div class="app-body">
+            <div class="app-body-content">
+                <div class="app-body-content-page-title">Dashboard</div>
+                <div class="app-body-content-tab-container">
+                    <div class="app-body-content-tab-master">
+                        <div class="app-body-content-tab-1">Resumes</div>
+                        <!-- <div class="app-body-content-tab-2">Cover Letters</div> -->
+                        <div width="66.9749984741211" offset="0" class="active-state"></div>
+                    </div>
+                    <button class="create-new">
+                        <svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            class="create-new-icon">
+                            <path d="M11 5H9v4H5v2h4v4h2v-4h4V9h-4V5z"></path>
+                        </svg>
+                        Create New</button>
+                </div>
+
+                <!-- Resumes -->
+                <div class="resumes-section">
+                    <div style="position: relative;">
+                        <div class="resume-column">
+                            <div class="resmue-to-edit">
+                                <p>Editable Resume</p>
+                            </div>
+                            <div class="resume-controls"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
