@@ -12,7 +12,7 @@
                 </div>
                 
                 <!-- Login Form -->
-                <form class="login-form">
+                <form class="login-form" [formGroup]="LoginForm">
                     <div class="form-inputs">
                         <div class="grey-area">
                             <div class="input-section">
@@ -20,7 +20,7 @@
                                     <div class="form-input-label">Email</div>
                                 </label> -->
                                 <div class="form-input-fields">
-                                    <input type="email" name="email" class="form-input-text" value placeholder="Email">
+                                    <input type="email" name="email" class="form-input-text" value placeholder="Email" formControlName="email">
                                     <div in="exited" class="input-hightlight"></div>
                                 </div>
                                 <div in="exited" class="grey-hightlight"></div>
@@ -28,7 +28,7 @@
 
                                 <div class="form-labels"></div>
                                 <div class="form-input-fields">
-                                    <input type="password" name="password" class="form-input-text" value placeholder="Password">
+                                    <input type="password" name="password" class="form-input-text" value placeholder="Password" formControlName="password">
                                     <div in="exited" class="input-hightlight"></div>
                                 </div>
                                 <div in="exited" class="grey-hightlight"></div>
@@ -41,7 +41,7 @@
                     <div class="form-footer">
                         <span class="back-button" (click)="goBack()">Back</span>
                         <div class="continue-div">
-                            <button type="submit" class="continue-button">Continue</button>
+                            <button type="button" class="continue-button" (click)="login()">Continue</button>
                         </div>
                     </div>
                 </form>
