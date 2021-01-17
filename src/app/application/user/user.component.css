@@ -506,6 +506,184 @@
       text-decoration: none;
   }
 
+  .resume-template-image-container {
+    width: 278px;
+    height: 390px;
+    border-radius: 4px;
+  }
+
+  .resume-template-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+  }
+
+  .edit-resume-svg-icon {
+    position: absolute;
+    left: calc(50% - 18px);
+    top: calc(50% - 18px);
+    display: none;
+    width: 36px;
+    height: 36px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 133, 153);
+    border-radius: 50%;
+  }
+
+  .resume-controls-container {
+    width: 100%;
+    max-width: 226px;
+  }
+
+  .resume-title-control-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding-right: 26px;
+  }
+
+  .resume-title-control-outerDiv {
+    position: relative;
+    max-width: 100%;
+  }
+
+  .resume-title-edit-link-container {
+    font-size: 22px;
+    line-height: 28px;
+    height: 28px;
+    min-width: 1px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .resume-title-edit-link {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .rename-title-icon-container {
+    position: absolute;
+    top: 2px;
+    left: calc(100% + 2px);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .rename-title-caption-area {
+    position: relative;
+  }
+
+  .rename-title-caption {
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 10;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    color: rgb(255, 255, 255);
+    padding: 5px 8px;
+    width: auto;
+    border-radius: 3px;
+    background-color: rgb(38, 43, 51);
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+
+  .rename-title-caption::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 0px 0px 2px;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    background-color: rgb(38, 43, 51);
+    top: 100%;
+    left: 50%;
+  }
+
+  .rename-title-svg-icon {
+    cursor: pointer;
+    color: rgb(184, 190, 204);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .jFnIcF {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: rgb(33, 150, 243);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.5, 0);
+    transition: transform 0.1s ease 0s;
+  }
+
+  .resume-update-control-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .resume-update-control-time:last-child {
+    margin-bottom: 0px;
+  }
+
+  .resume-update-control-time {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(152, 161, 179);
+    margin-bottom: 8px;
+  }
+
+  .edit-resume-control-link-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(38, 43, 51);
+    pointer-events: all;
+  }
+
+  .edit-resume-control-link-svg {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(33, 150, 243);
+    margin-right: 5px;
+  }
+  
   @media(max-width: 1023px){
       .app-nav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100;}
       .app-section { padding-top: 80px; }
@@ -566,6 +744,9 @@
 
       .resume-playarea-container {align-items: flex-start; margin-right: 0px; margin-bottom: 32px;}
       .resume-image-container { margin-right: 20px; }
+      .resume-template-image-container { width: 108px; height: 151px; }
+
+      .edit-resume-svg-icon { display: flex; }
   }
   
 /* 
