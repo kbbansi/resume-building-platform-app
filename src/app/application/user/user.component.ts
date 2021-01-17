@@ -6,8 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  userName: any;
+  id: any;
+  resume: any;
+  firstName: any;
+  lastName: any;
+  otherNames: any;
+  email: any;
+  accountType: any;
 
-  constructor() { }
+  constructor() {
+    this.userName = sessionStorage.getItem('userName');
+    this.id = sessionStorage.getItem('id');
+    this.resume = sessionStorage.getItem('resume');
+    this.firstName = sessionStorage.getItem('email')
+    this.lastName = sessionStorage.getItem('accountType')
+    this.otherNames = sessionStorage.getItem('firstName')
+    this.email = sessionStorage.getItem('lastName')
+    this.accountType = sessionStorage.getItem('otherNames')
+  }
 
   ngOnInit(): void {
   }
