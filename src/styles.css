@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {    
+    cursor: default;
+    --HSDSGlobalFontFamily: "Aktiv Grotesk","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --HSDSGlobalFontFamilyMono: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    --HSDSGlobalFontSize: 13px;
+    font-family: TT Commons,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    color: #262b33;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
