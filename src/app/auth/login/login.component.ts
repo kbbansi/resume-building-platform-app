@@ -28,7 +28,6 @@ export class LoginComponent implements OnInit {
   login() {
     this.dataBucket = {};
     // console.log(this.LoginForm.value);
-    // this.router.navigate(['application/app/user'])
     this.auth.login(this.LoginForm.value).subscribe(response => {
       this.dataBucket = response;
       console.log(this.dataBucket.status);
@@ -41,7 +40,9 @@ export class LoginComponent implements OnInit {
         console.log(sessionStorage.getItem('id'));
         console.log(sessionStorage.getItem('email'));
         console.log(sessionStorage.getItem('userName'));
-        console.log(sessionStorage.getItem('resume'))
+        console.log(sessionStorage.getItem('resume'));
+
+        this.router.navigate(['application/app/user'])
       }
     });
   }
