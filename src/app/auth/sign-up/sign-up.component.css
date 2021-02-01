@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .signup-body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+      background-color: rgb(242, 245, 250);
+      transition: background-color 0.4s ease 0s;
+  }
+
+  .signup-nav-container {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      flex-shrink: 0;
+      width: 100%;
+      height: 54px;
+      padding: 0px 32px;
+  }
+
+  a {
+      color: inherit;
+      text-decoration: none;
+  }
+
+  .app-logo {
+      display: inline-block;
+      width: 190px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-position: 0px 50%;
+      background-size: contain;
+      vertical-align: middle;
+  }
+
+  .signup-progress-nav-container {
+      position: absolute;
+      width: 700px;
+      left: calc(50% - 350px);
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+  }
+
+  .signup-progress-nav-inner-container {
+      width: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+  }
+
+  .signup-nav-item {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+  }
+
+  .signup-nav-item::after {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background-color: rgb(221, 227, 240);
+      margin: 0px 8px;
+      color: rgb(221, 227, 240);
+  }
+
+  .item-one {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(33, 150, 243);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-right: 12px;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+  }
+  
+  .choose-template-div {
+      color: rgb(38, 43, 51);
+      transition: color 0.2s ease 0s;
+    }
+
+  .item-two {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(221, 227, 240);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(152, 161, 179);
+    font-weight: 600;
+    margin-right: 12px;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+  }
+
+  .enter-details {
+      color: rgb(152, 161, 179);
+      transition: color 0.2s ease 0s;
+  }
+
+  .item-three {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(221, 227, 240);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(152, 161, 179);
+    font-weight: 600;
+    margin-right: 12px;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+  }
+  
+  .download-resume {
+      color: rgb(152, 161, 179);
+      transition: color 0.2s ease 0s;
+  }
+
+
+  .signup-close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 32px;
+    bottom: 2px;
+    color: rgb(207, 214, 230);
+    cursor: pointer;
+    transition: color 0.2s ease 0s;
+  }
+
+  svg:not(:root) {
+      overflow: hidden;
+  }
+
+  svg {
+      fill: currentColor;
+  }
+
+  .signup-play-area {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: calc(100vh - 80px);
+  }
+
+  .signup-play-area-inner-div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+      overflow: hidden;
+  }
+
+  .signup-play-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+      will-change: opacity, transform;
+  }
+
+  .signup-iqypzt {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+  }
+
+  .signup-ektalt {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+      user-select: none;
+  }
+
+  .signup-cicuqu {
+      position: relative;
+  }
+
+  .signup-ebtnoc {
+      position: absolute;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: rgb(33, 150, 243);
+      color: rgb(255, 255, 255);
+      border-radius: 50%;
+      z-index: 2;
+      cursor: pointer;
+      transition: background-color 0.3s ease 0s;
+      left: 60px;
+      top: calc(50% - 24px);
+      transform: rotate(180deg);
+  }
+
+  .signup-hkisqx {
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgb(33, 150, 243);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    right: 60px;
+    top: calc(50% - 24px);
+  }
+
+  .slick-list, .slick-slider {
+      position: relative;
+      display: block;
+      transform: translateZ(0);
+  }
+
+  .slick-list {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+
+  .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .slick-track:after, .slick-track:before {
+      display: table;
+      content: "";
+  }
+
+  :after, :before {
+      text-decoration: inherit;
+      vertical-align: inherit;
+  }
+
+  *, :after, :before {
+      background-repeat: no-repeat;
+      box-sizing: inherit;
+  }
+
+
+
+  /* media queries */
+  @media(max-width: 767px) {
+      .signup-nav-container { height: 46px; padding: 0px 20px;}
+
+      .signup-play-area { min-width: calc(100vh - 64px); }
+
+      .signup-iqypzt { padding-top: 20px; }
+  }
+
+  @media(max-width: 1023px) {
+    .signup-progress-nav-container { display: none; }
+
+    .signup-ebtnoc { left: 24px; }
+    .signup-hkisqx { right: 24; }
+  }
